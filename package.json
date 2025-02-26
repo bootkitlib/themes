@@ -1,0 +1,17 @@
+{
+  "name": "@bootkit/themes",
+  "version": "1.0.0",
+  "description": "Bootstrap 5 Themes",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build-watch": "sass --watch scss/bootstrap.scss dist/bootstrap.css",
+    "build": "sass scss/bootstrap.scss dist/bootstrap.css",
+    "build-rtl": "npm run build-bootstrap & rtlcss dist/bootstrap.css dist/bootstrap.rtl.css"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "rtlcss": "^4.2.0",
+    "sass": "^1.77.8"
+  }
+}
