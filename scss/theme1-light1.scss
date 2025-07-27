@@ -1,0 +1,174 @@
+// set global options
+// https://getbootstrap.com/docs/5.3/customize/options/
+$enable-validation-icons: false;
+
+//
+$font-family-base: IRANSans;
+$font-size-base: .9rem;
+
+// Body
+$body-bg: #faf9ff;
+$body-color: #181C32;
+
+// Colors
+$primary: #1B84FF;
+$secondary: #e8eaf2;
+$success: #17C653;
+$info: #7239EA;
+$warning: #F6C000;
+$danger: #F8285A;
+$light: #F9F9F9;
+$dark: #181C32;
+
+$secondary-text-emphasis: darkgray;
+
+$border-color: rgba(225, 227, 234, 1);
+$border-color-translucent: rgb(0 71 124 / 11%);
+
+// Layout
+// $grid-gutter-width: .5rem;
+
+// Code
+$code-font-size: inherit;
+
+// pre
+pre {
+    font-family: $font-family-base !important;
+}
+
+// $code-color: inherit;
+
+// Headings
+$headings-font-weight: 700;
+$h1-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1;
+
+// Display
+$display-font-weight: 400;
+$display-font-sizes: (
+    1: 2.25rem,
+    2: 2rem,
+    3: 1.75rem,
+    4: 1.5rem,
+    5: 1.25rem,
+    6: 1rem
+);
+
+// Button
+.btn {
+
+    &:focus,
+    &:active,
+    &:active:focus,
+    &.active:focus {
+        outline: none;
+    }
+
+    // &-secondary {
+    //   color: $gray-900;
+    //   background-color: $white;
+    //   border-color: #ccc;
+
+    //   &:hover {
+    //     color: $gray-900;
+    //     background-color: $gray-300;
+    //     border-color: $gray-500;
+    //   }
+
+    //   &.disabled {
+    //     color: tint-color($gray-900, 5%);
+    //     background-color: $white;
+    //     border-color: tint-color(#ccc, 5%);
+    //   }
+    // }
+
+    &-warning {
+        color: #FFF !important;
+        //   color: $white;
+    }
+
+    &-primary {
+        color: #FFF !important;
+        //   box-shadow: 0 0 5px tint-color($primary, 10%);
+    }
+
+    &-secondary:focus {
+        //   box-shadow: 0 0 5px $gray-400;```
+    }
+
+    &-success {
+        color: #FFF !important;
+        //   box-shadow: 0 0 5px tint-color($success, 10%);
+    }
+
+    &-info:focus {
+        //   box-shadow: 0 0 5px tint-color($info, 10%);
+    }
+
+    &-warning:focus {
+        //   box-shadow: 0 0 5px tint-color($warning, 10%);
+    }
+
+    &-danger {
+        color: #FFF !important;
+        //   box-shadow: 0 0 5px tint-color($danger, 10%);
+    }
+
+    &.disabled:focus {
+        box-shadow: none;
+    }
+}
+
+// Forms
+
+
+// Form Switch
+$form-switch-width: 3em;
+$form-check-input-width: 1.8em;
+$form-check-min-height: 2rem;
+
+// Form Control
+$input-bg: #f5f8fa;
+$input-border-color: #dbdee0;
+// $input-border-width: 0;
+// $form-feedback-icon-valid: none;
+
+// Shadow
+$box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+
+//Card
+$spacer: 1.5rem;
+$card-bg: white;
+$card-cap-bg: white;
+$card-box-shadow: $box-shadow;
+// $card-border-width: 0;
+$card-border-radius: .8rem;
+.card {
+    box-shadow: $box-shadow;
+    .card {
+        box-shadow: none;
+    }
+}
+
+// List Group
+$list-group-color: $body-color;
+$list-group-item-padding-x: 0;
+
+// Table
+$table-th-font-weight: 500;
+$table-bg: $card-bg;
+
+// badge
+$badge-font-size: 1;
+$badge-font-weight: normal;
+
+// Alert
+$alert-padding-y: 1rem;
+$alert-padding-x: 1rem;
+
+@import './common.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';

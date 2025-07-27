@@ -2,7 +2,6 @@
 // https://getbootstrap.com/docs/5.3/customize/options/
 $enable-validation-icons: false;
 
-
 //
 $font-family-base: IRANSans;
 $font-size-base: .9rem;
@@ -171,5 +170,5 @@ $badge-font-weight: normal;
 $alert-padding-y: 1rem;
 $alert-padding-x: 1rem;
 
-@import './utilities.scss';
+@import './common.scss';
 @import '../node_modules/bootstrap/scss/bootstrap';
