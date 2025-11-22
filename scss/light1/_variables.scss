@@ -1,0 +1,91 @@
+/**
+Light Theme 1 Color Variables
+**/
+
+// Colors
+$primary:  #23c55e; // #00A76F;
+$secondary: #f1f1f4;
+$success: #17C653;
+$info: #7239EA;
+$warning: #F6C000;
+$danger: #F8285A;
+$light: #F9F9F9;
+$dark: #1E2129;
+$secondary-text-emphasis: darkgray;
+
+$body-bg: #faf8fa;
+$body-color: #4c4d50;
+$headings-color: #0b0a12;
+
+// Breadcrumb
+$breadcrumb-divider-color: #66676b;
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
+// $breadcrumb-font-size:              null;
+// $breadcrumb-padding-y:              0;
+// $breadcrumb-padding-x:              0;
+// $breadcrumb-item-padding-x:         .5rem;
+// $breadcrumb-margin-bottom:          1rem;
+// $breadcrumb-bg:                     null;
+$breadcrumb-active-color:           var(--#{$prefix}primary);
+// $breadcrumb-divider-flipped:        $breadcrumb-divider;
+// $breadcrumb-border-radius:          null;
+
+// Shadow
+$box-shadow: 0 0 2px 0px rgb(105 65 198 / 37%);
+
+// Alert
+
+// Badge
+
+// Border
+$border-color: #ececec;
+$border-color-translucent: $border-color;
+
+//Card
+$card-bg: white;
+$card-cap-bg: white;
+$card-box-shadow: $box-shadow;
+$card-border-color: $border-color;
+// $card-title-color: $headings-color;
+$card-border-width: 0;
+
+
+// Code
+// $code-color: inherit;
+
+
+
+// Display
+
+// Button
+
+// Forms
+
+// Form Switch
+
+// Form Control
+$input-bg: rgb(0 0 0 / 1%);
+$input-border-color: rgb(0 0 0 / 8%);
+
+// List Group
+// $list-group-color: transparent !important;
+// $list-group-color:                  var(--#{$prefix}body-color);
+$list-group-bg: trnsparent;
+$list-group-border-color: trnsparent;
+// $list-group-hover-bg:               var(--#{$prefix}tertiary-bg);
+// $list-group-active-color:           $component-active-color;
+$list-group-active-bg: var(--bs-primary-soft);
+// $list-group-active-border-color:    $list-group-active-bg;
+// $list-group-disabled-color:         var(--#{$prefix}secondary-color);
+// $list-group-disabled-bg:            $list-group-bg;
+// $list-group-action-color:           var(--#{$prefix}secondary-color);
+// $list-group-action-hover-color:     var(--#{$prefix}emphasis-color);
+// $list-group-action-active-color:    var(--#{$prefix}body-color);
+// $list-group-action-active-bg:       var(--#{$prefix}secondary-bg);
+
+// Table
+$table-bg: inherit;
+$table-color: inherit;
+
+// Modal
+

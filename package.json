@@ -4,11 +4,9 @@
   "description": "Bootstrap 5 Themes",
   "author": "Bootkit",
   "scripts": {
-    "build:watch": "sass --watch scss/theme1-light1.scss dist/theme1-light1.ltr.css",
-    "build:theme1-light1-ltr": "sass scss/theme1-light1.scss dist/theme1-light1.ltr.css",
-    "build:theme1-light1-rtl": "npm run build-theme1-light1-ltr & rtlcss dist/theme1-light1.ltr.css dist/theme1-light1.rtl.css",
-    "build:theme1-dark1-ltr": "sass scss/theme1-dark1.scss dist/theme1-dark1.ltr.css",
-    "build:theme1-dark1-rtl": "npm run build-theme1-dark1-ltr & rtlcss dist/theme1-dark1.ltr.css dist/theme1-dark1.rtl.css"
+    "watch:light1": "sass --watch scss/light1/light1.scss dist/light1.css",
+    "build:light1": "sass scss/light1/light1.scss dist/light1.css",
+    "build:light1-rtl": "sass scss/light1/light1.scss dist/light1.css & rtlcss dist/light1.css dist/light1.rtl.css"
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",

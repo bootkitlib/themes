@@ -1,0 +1,75 @@
+/**
+Dark Theme 1 Color Variables
+**/
+
+// Colors
+$primary: #1B84FF;
+$secondary: #c5c5c7;
+$success: #17C653;
+$info: #7239EA;
+$warning: #F6C000;
+$danger: #F8285A;
+$light: #F9F9F9;
+$dark: #1E2129;
+$secondary-text-emphasis: darkgray;
+
+// Alert
+
+// Badge
+
+// Body
+$body-bg: #E1ECD5;
+$body-color: #4c4d50;
+
+// Border
+$border-color: #e2e2e2;
+$border-color-translucent: $border-color;
+
+//Card
+$card-bg: white;
+$card-cap-bg: white;
+$card-box-shadow: $box-shadow;
+$card-border-color: $border-color;
+$card-title-color: $headings-color;
+
+// Code
+// $code-color: inherit;
+
+// Headings
+$headings-color: #0b0a12;
+
+// Display
+
+// Button
+
+// Forms
+
+// Form Switch
+
+// Form Control
+$input-bg: #f5f8fa;
+$input-border-color: #dbdee0;
+
+// List Group
+// $list-group-color: transparent !important;
+// $list-group-color:                  var(--#{$prefix}body-color);
+$list-group-bg: trnsparent;
+$list-group-border-color: trnsparent;
+// $list-group-hover-bg:               var(--#{$prefix}tertiary-bg);
+// $list-group-active-color:           $component-active-color;
+$list-group-active-bg: var(--bs-primary-soft);
+// $list-group-active-border-color:    $list-group-active-bg;
+// $list-group-disabled-color:         var(--#{$prefix}secondary-color);
+// $list-group-disabled-bg:            $list-group-bg;
+// $list-group-action-color:           var(--#{$prefix}secondary-color);
+// $list-group-action-hover-color:     var(--#{$prefix}emphasis-color);
+// $list-group-action-active-color:    var(--#{$prefix}body-color);
+// $list-group-action-active-bg:       var(--#{$prefix}secondary-bg);
+
+// Table
+$table-bg: $card-bg;
+
+// Modal
+
+// Shadow
+$box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.01);

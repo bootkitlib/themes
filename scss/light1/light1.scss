@@ -1,0 +1,21 @@
+// Bootstrap Light Theme 1
+$prefix: bs- !default;
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include variables
+
+@import "../variables";
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables-dark";
+
+// 3. Map overrides
+@import "../maps";
+
+// 4. Import Bootstrap modules
+@import "../shared";
+
+// 5. Custom styles
+@import "../styles"

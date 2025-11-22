@@ -1,0 +1,131 @@
+/**
+ Global shared variables (used by all themes)
+**/
+
+$font-weight-base: 400;
+$font-size-base: 0.95rem;
+$font-family-base: IRANSans;
+$headings-font-family: IRANSans;
+// $font-weight-normal: 300;
+
+// Body
+
+// Grid
+$grid-gutter-width: 1.5rem;
+
+// Container
+
+// Breadcrumb
+
+// Colors
+
+// Code
+$code-font-size: inherit;
+
+// pre
+// $code-color: inherit;
+
+// Headings
+$headings-font-weight: 500;
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1;
+
+// Display
+$display-font-weight: 400;
+
+// Button
+$font-weight-base: 300;
+
+// Forms
+$enable-validation-icons: false;
+
+// Form Switch
+$form-switch-width: 3em;
+$form-check-input-width: 1.8em;
+$form-check-min-height: 2rem;
+
+// Form Control
+// $input-border-width: 0;
+// $form-feedback-icon-valid: none;
+// $input-border-radius:                   var(--#{$prefix}border-radius);
+// $input-border-radius-sm:                var(--#{$prefix}border-radius-sm);
+// $input-border-radius-lg:                var(--#{$prefix}border-radius-lg);
+
+// Shadow
+$box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.01);
+
+//Card
+$spacer: 1.5rem;
+$card-border-radius: .8rem;
+
+
+// Modal
+$modal-inner-padding: 1rem;
+
+// List Group
+// $list-group-color: transparent !important;
+// $list-group-item-padding-x: 0;
+$list-group-bg: trnsparent;
+$list-group-border-color: trnsparent;
+$list-group-border-width: 1px !important;
+$list-group-border-radius: .5rem !important;
+// $list-group-item-padding-y:         $spacer * .5;
+// $list-group-item-padding-x:         $spacer;
+// $list-group-item-bg-scale:          -80%; // Deprecated in v5.3.0
+// $list-group-item-color-scale:       40%; // Deprecated in v5.3.0
+// $list-group-hover-bg:               var(--#{$prefix}tertiary-bg);
+// $list-group-active-color:           $component-active-color;
+// $list-group-active-border-color:    $list-group-active-bg;
+// $list-group-disabled-color:         var(--#{$prefix}secondary-color);
+// $list-group-disabled-bg:            $list-group-bg;
+// $list-group-action-color:           var(--#{$prefix}secondary-color);
+// $list-group-action-hover-color:     var(--#{$prefix}emphasis-color);
+// $list-group-action-active-color:    var(--#{$prefix}body-color);
+// $list-group-action-active-bg:       var(--#{$prefix}secondary-bg);
+
+// Table
+$table-th-font-weight: 500;
+
+// badge
+$badge-font-size: 0.9em;
+$badge-font-weight: inherit;
+
+// Alert
+$alert-padding-y: 1rem;
+$alert-padding-x: 1rem;
+
+// Pagination
+// $pagination-padding-y:              .375rem;
+$pagination-padding-x:              .9rem;
+// $pagination-padding-y-sm:           .25rem;
+// $pagination-padding-x-sm:           .5rem;
+// $pagination-padding-y-lg:           .75rem;
+// $pagination-padding-x-lg:           1.5rem;
+// $pagination-font-size:              $font-size-base;
+$pagination-color:                  var(--bs-text-body);
+$pagination-bg: transparent;
+$pagination-border-radius:          0.7rem;
+$pagination-border-width: 0;
+$pagination-margin-start:           .2rem;
+// $pagination-border-color:           var(--#{$prefix}border-color);
+// $pagination-focus-color:            var(--#{$prefix}link-hover-color);
+// $pagination-focus-bg:               var(--#{$prefix}secondary-bg);
+// $pagination-focus-box-shadow:       $focus-ring-box-shadow;
+// $pagination-focus-outline:          0;
+// $pagination-hover-color:            var(--#{$prefix}link-hover-color);
+// $pagination-hover-bg:               var(--#{$prefix}tertiary-bg);
+// $pagination-hover-border-color:     var(--#{$prefix}border-color); // Todo in v6: remove this?
+$pagination-active-color:           var(--bs-light);
+$pagination-active-bg:              var(--bs-success);
+// $pagination-active-border-color:    $component-active-bg;
+// $pagination-disabled-color:         var(--#{$prefix}secondary-color);
+// $pagination-disabled-bg:            var(--#{$prefix}secondary-bg);
+// $pagination-disabled-border-color:  var(--#{$prefix}border-color);
+// $pagination-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+// $pagination-border-radius-sm:       var(--#{$prefix}border-radius-sm);
+// $pagination-border-radius-lg:       var(--#{$prefix}border-radius-lg);
+
