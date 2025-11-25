@@ -18,16 +18,6 @@ Common styles (used by all themes)
   .text-#{$name} {
     color: var(--bs-#{$name}) !important;
   }
-
-  .btn-#{$name} {
-    background-color: var(--bs-#{$name}) !important;
-    color: $body-color !important;
-    border: 1px solid transparent;
-
-    &:hover {
-      background-color: rgba($color, 0.25) !important;
-    }
-  }
 }
 
 // Generate grays scale colors:
@@ -106,8 +96,37 @@ Common styles (used by all themes)
 
 // Body
 
+// Button
+.btn-primary,
+.btn-success {
+  color: white !important;
+}
+
+@each $color, $value in $theme-colors-soft {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+    color: shade-color($value, 70%);
+    // --#{$prefix}btn-focus-shadow-rgb: #{to-rgb($value)};
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    --#{$prefix}btn-border-color: #{tint-color($value, 40%)};
+    --#{$prefix}btn-hover-border-color: #{tint-color($value, 40%)};
+    --#{$prefix}btn-hover-color: #{shade-color($value, 10%)};
+    --#{$prefix}btn-hover-bg: #{tint-color($value, 80%)};
+  }
+}
+
+.btn-outline-secondary {
+  // --#{$prefix}btn-border-color: #{shade-color($secondary, 20)};
+  --#{$prefix}btn-color: #{shade-color($secondary, 40%)};
+  --#{$prefix}btn-hover-color: #{shade-color($secondary, 50%)};
+}
+
 // Breadcrumb
-:dir(rtl) .breadcrumb-item + .breadcrumb-item::before {
+:dir(rtl) .breadcrumb-item+.breadcrumb-item::before {
   transform: rotate(180deg) !important;
   padding-right: unset !important;
   padding-left: var(--bs-breadcrumb-item-padding-x);
@@ -127,7 +146,7 @@ Common styles (used by all themes)
   }
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: $breadcrumb-divider-color !important;
 }
 
@@ -158,57 +177,6 @@ pre {
 // .breadcrumb-item + .breadcrumb-item::before {
 //   color: var(--bs-text-color) !important;
 // }
-
-// Button
-button {
-  // color: var(--bs-text-color) !important;
-  transition: color 0.3s !important;
-}
-
-.btn {
-  &:focus,
-  &:active,
-  &:active:focus,
-  &.active:focus {
-    outline: none;
-  }
-
-  &-warning {
-    color: #fff !important;
-    //   color: $white;
-  }
-
-  &-primary {
-    color: #fff !important;
-    //   box-shadow: 0 0 5px tint-color($primary, 10%);
-  }
-
-  &-secondary:focus {
-    //   box-shadow: 0 0 5px $gray-400;```
-  }
-
-  &-success {
-    color: #fff !important;
-    //   box-shadow: 0 0 5px tint-color($success, 10%);
-  }
-
-  &-info:focus {
-    //   box-shadow: 0 0 5px tint-color($info, 10%);
-  }
-
-  &-warning:focus {
-    //   box-shadow: 0 0 5px tint-color($warning, 10%);
-  }
-
-  &-danger {
-    color: #fff !important;
-    //   box-shadow: 0 0 5px tint-color($danger, 10%);
-  }
-
-  &.disabled:focus {
-    box-shadow: none;
-  }
-}
 
 // Forms
 
@@ -245,6 +213,7 @@ button {
 
 // Table
 table {
+
   td,
   th {
     vertical-align: middle;

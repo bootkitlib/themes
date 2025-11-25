@@ -11,7 +11,7 @@
             "runtimeExecutable": "npm",
             "runtimeArgs": [
                 "run",
-                "start-open",
+                "watch",
             ],
             "autoAttachChildProcesses": true,
             "restart": true,

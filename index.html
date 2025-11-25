@@ -7,92 +7,132 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer-when-downgrade" />
-  <link rel="stylesheet" href="/dist/light1.css">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap" /> -->
+
+  <link rel="stylesheet" href="/dist/light1/light1.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="p-2">
+<body class="py-5">
   <div class="container">
-    <div class="card">
-      <div class="card-header">
-        Buttons
-      </div>
-      <div class="card-body">
-        <button class="btn btn-success">success</button>
-        <button class="btn btn-primary">primary</button>
-        <button class="btn btn-secondary">secondary</button>
-        <button class="btn btn-danger">danger</button>
-        <button class="btn btn-info">info</button>
-        <button class="btn btn-warning">warning</button>
-        <button class="btn btn-light">light</button>
-        <button class="btn btn-dark">dark</button>
-      </div>
+    <section id="button-section">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="m-0">Buttons</h4>
+        </div>
+        <div class="card-body">
+          <h6>Default buttons</h6>
+          <button class="btn btn-primary">primary</button>
+          <button class="btn btn-secondary">secondary</button>
+          <button class="btn btn-success">success</button>
+          <button class="btn btn-danger">danger</button>
+          <button class="btn btn-info">info</button>
+          <button class="btn btn-warning">warning</button>
+          <button class="btn btn-light">light</button>
+          <button class="btn btn-dark">dark</button>
+        </div>
+        <div class="card-body">
+          <h6>Soft buttons</h6>
+          <button class="btn btn-primary-soft">primary</button>
+          <button class="btn btn-secondary-soft">secondary</button>
+          <button class="btn btn-success-soft">success</button>
+          <button class="btn btn-danger-soft">danger</button>
+          <button class="btn btn-info-soft">info</button>
+          <button class="btn btn-warning-soft">warning</button>
+          <button class="btn btn-light-soft">light</button>
+          <button class="btn btn-dark-soft">dark</button>
+        </div>
 
-      <div class="card-footer">
-        <button class="btn btn-outline-success">success</button>
-        <button class="btn btn-outline-primary">primary</button>
-        <button class="btn btn-outline-secondary">secondary</button>
-        <button class="btn btn-outline-danger">danger</button>
-        <button class="btn btn-outline-info">info</button>
-        <button class="btn btn-outline-warning">warning</button>
-        <button class="btn btn-outline-light">light</button>
-        <button class="btn btn-outline-dark">dark</button>
-      </div>
-    </div>
+        <div class="card-footer">
+          <h6>Outline</h6>
+          <button class="btn btn-outline-primary">primary</button>
+          <button class="btn btn-outline-secondary">secondary</button>
+          <button class="btn btn-outline-success">success</button>
+          <button class="btn btn-outline-danger">danger</button>
+          <button class="btn btn-outline-info">info</button>
+          <button class="btn btn-outline-warning">warning</button>
+          <button class="btn btn-outline-light">light</button>
+          <button class="btn btn-outline-dark">dark</button>
+        </div>
 
-    <div class="card mt-3">
-      <div class="card-header">
-        Alerts
+        <div class="card-footer">
+          <h6>Disabled</h6>
+          <div class="mb-2">
+            <button class="btn btn-primary" disabled>primary</button>
+            <button class="btn btn-secondary" disabled>secondary</button>
+            <button class="btn btn-success" disabled>success</button>
+            <button class="btn btn-danger" disabled>danger</button>
+            <button class="btn btn-info" disabled>info</button>
+            <button class="btn btn-warning" disabled>warning</button>
+            <button class="btn btn-light" disabled>light</button>
+            <button class="btn btn-dark" disabled>dark</button>
+          </div>
+          <div>
+            <button class="btn btn-outline-primary" disabled>primary</button>
+            <button class="btn btn-outline-secondary" disabled>secondary</button>
+            <button class="btn btn-outline-success" disabled>success</button>
+            <button class="btn btn-outline-danger" disabled>danger</button>
+            <button class="btn btn-outline-info" disabled>info</button>
+            <button class="btn btn-outline-warning" disabled>warning</button>
+            <button class="btn btn-outline-light" disabled>light</button>
+            <button class="btn btn-outline-dark" disabled>dark</button>
+          </div>
+
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="dard-title"></h5>
-        <p>
-        </p>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="alert alert-primary">
+    </section>
+
+    <section id="alert-section">
+      <div class="card mt-3">
+        <div class="card-header">
+          <h4 class="m-0">Alerts</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="dard-title"></h5>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="alert alert-primary">
+                I'm a primary alert!
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-secondary">
+            <div class="col-sm-3">
+              <div class="alert alert-secondary">
+                I'm a secondary alert!
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-info">
+            <div class="col-sm-3">
+              <div class="alert alert-info">
+                I'm an info alert!
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-danger">
+            <div class="col-sm-3">
+              <div class="alert alert-danger">
+                I'm a danger alert!
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-info">
+            <div class="col-sm-3">
+              <div class="alert alert-warning">
+                I'm a warning alert!
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-warning">
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-light">
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="alert alert-dark">
+            <div class="col-sm-3">
+              <div class="alert alert-light">
+                I'm a light alert!
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="card-footer">
-        <div class="badge text-bg-success">success</div>
-        <div class="badge text-bg-danger">danger</div>
-        <div class="badge text-bg-warning">warning</div>
-      </div>
-    </div>
 
     <div class="card mt-3">
       <div class="card-header">
-        badges
+        <h4 class="m-0">Badges</h4>
       </div>
 
       <div class="card-footer">

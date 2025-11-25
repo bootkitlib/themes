@@ -1,18 +1,18 @@
 /**
 Common maps (used by all themes)
 **/
-$alpha: .2;
+$tint: 70;
 
 // Soft color variants (adjust alpha as needed)
 $theme-colors-soft: (
-  "primary-soft": rgba($primary, $alpha),
-  "secondary-soft": rgba($secondary, $alpha),
-  "success-soft": rgba($success, $alpha),
-  "info-soft": rgba($info, $alpha),
-  "warning-soft": rgba($warning, $alpha),
-  "danger-soft": rgba($danger, $alpha),
-  "light-soft": rgba($light, $alpha),
-  "dark-soft": rgba($dark, $alpha)
+  "primary-soft": tint-color($primary, $tint),
+  "secondary-soft": tint-color($secondary, $tint),
+  "success-soft": tint-color($success, $tint),
+  "info-soft": tint-color($info, $tint),
+  "warning-soft": tint-color($warning, $tint),
+  "danger-soft": tint-color($danger, $tint),
+  "light-soft": tint-color($light, $tint),
+  "dark-soft": tint-color($dark, $tint)
 );
 
 $display-font-sizes: (
