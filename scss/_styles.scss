@@ -94,6 +94,15 @@ Common styles (used by all themes)
   background-color: var(--bs-gray-900) !important;
 }
 
+// text-bg-*-subtle
+@each $color, $value in $theme-colors-bg-subtle {
+  .text-bg-#{$color}-subtle {
+    color: color-contrast($value) if($enable-important-utilities, !important, null);
+    background-color: $value if($enable-important-utilities, !important, null);
+  }
+}
+
+
 // Body
 
 // Button
@@ -119,11 +128,14 @@ Common styles (used by all themes)
   }
 }
 
+
+
 .btn-outline-secondary {
   // --#{$prefix}btn-border-color: #{shade-color($secondary, 20)};
   --#{$prefix}btn-color: #{shade-color($secondary, 40%)};
   --#{$prefix}btn-hover-color: #{shade-color($secondary, 50%)};
 }
+
 
 // Breadcrumb
 :dir(rtl) .breadcrumb-item+.breadcrumb-item::before {
