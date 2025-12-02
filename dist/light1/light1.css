@@ -714,7 +714,7 @@ progress {
 }
 
 .figure-img {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   line-height: 1;
 }
 
@@ -2193,7 +2193,7 @@ progress {
   --bs-table-hover-color: var(--bs-emphasis-color);
   --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   vertical-align: top;
   border-color: var(--bs-table-border-color);
 }
@@ -4592,7 +4592,7 @@ textarea.form-control-lg {
   --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
-  --bs-card-cap-bg: white;
+  --bs-card-cap-bg: transparent;
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
