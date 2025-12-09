@@ -2,8 +2,8 @@
  Global shared variables (used by all themes)
 **/
 
-$font-family-base: IRANSans;
-$headings-font-family: IRANSans;
+$font-family-base: 'Yekan Bakh FaNum SemiCondensed';
+$headings-font-family: 'Yekan Bakh FaNum';
 $font-weight-base: 400;
 $font-size-base: 0.95rem;
 // $font-weight-normal: 300;
@@ -28,7 +28,7 @@ $code-font-size: inherit;
 // $code-color: inherit;
 
 // Headings
-$headings-font-weight: 500;
+$headings-font-weight: 600;
 $h1-font-size: $font-size-base * 4;
 $h2-font-size: $font-size-base * 3;
 $h3-font-size: $font-size-base * 1.75;
@@ -59,9 +59,6 @@ $form-check-min-height: 2rem;
 // $input-border-radius:                   var(--#{$prefix}border-radius);
 // $input-border-radius-sm:                var(--#{$prefix}border-radius-sm);
 // $input-border-radius-lg:                var(--#{$prefix}border-radius-lg);
-
-// Shadow
-$box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.01);
 
 //Card
 // $spacer: 1.5rem;
