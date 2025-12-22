@@ -21,10 +21,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "sass scss:dist --load-path=node_modules",
+    "build": "sass scss:dist --load-path=node_modules & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css",
     "publish-npm": "npm run build & npm publish --access public",
-    "watch": "sass --watch scss:dist --load-path=node_modules",
-    "build:rtl": "npm run build & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css"
+    "watch": "sass --watch scss:dist --load-path=node_modules"
   },
   "peerDependencies": {
     "bootstrap": "^5.3.3"
