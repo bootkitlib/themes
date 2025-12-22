@@ -21,13 +21,15 @@
     "access": "public"
   },
   "scripts": {
-    "build": "sass src/scss:dist",
+    "build": "sass src/scss:dist --load-path=node_modules",
     "publish-npm": "npm run build & npm publish --access public",
-    "watch": "sass --watch scss:dist",
+    "watch": "sass --watch scss:dist --load-path=node_modules",
     "build:rtl": "npm run build & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css"
   },
+  "peerDependencies": {
+    "bootstrap": "^5.3.3"
+  },
   "devDependencies": {
-    "bootstrap": "^5.3.3",
     "rtlcss": "^4.2.0",
     "sass": "^1.77.8"
   }
