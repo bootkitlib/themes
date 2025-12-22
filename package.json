@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "sass src/scss:dist",
-    "publish": "npm run build & npm publish --access public",
+    "publish-npm": "npm run build & npm publish --access public",
     "watch": "sass --watch scss:dist",
     "build:rtl": "npm run build & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css"
   },
