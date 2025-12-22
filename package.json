@@ -3,9 +3,23 @@
   "version": "1.0.0",
   "description": "Bootstrap 5 Themes",
   "author": "Bootkit",
+  "license": "MIT",
+  "homepage": "https://bootkitlib.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bootkitlib/themes"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap-theme",
+    "scss",
+    "sass",
+    "ui",
+    "themes"
+  ],
   "scripts": {
+    "build": "sass src/scss:dist",
     "watch": "sass --watch scss:dist",
-    "build": "sass scss:dist",
     "build:rtl": "npm run build & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css"
   },
   "devDependencies": {
