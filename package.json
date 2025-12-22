@@ -17,6 +17,9 @@
     "ui",
     "themes"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "sass src/scss:dist",
     "publish-npm": "npm run build & npm publish --access public",
