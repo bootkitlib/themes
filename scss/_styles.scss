@@ -104,6 +104,12 @@ Common styles (used by all themes)
 
 
 // Body
+body {
+  background-image: $body-background-image;
+  background-size: $body-background-size;
+  // background-color: #fafafa;
+}
+
 
 // ------------------------ Components ------------------------
 // Button

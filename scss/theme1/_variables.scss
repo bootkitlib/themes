@@ -2,6 +2,10 @@
 Light Theme 1 Color Variables
 **/
 
+// ------------------------ Custom Variables (Not Bootstrap-specific) ------------------------
+$body-background-image: linear-gradient(#efefef96 1px, transparent 1px), linear-gradient(to right, #efefef96 1px, transparent 1px);
+$body-background-size: 32px 32px;
+
 // ------------------------ Utilities ------------------------
 // Colors
 $primary: #1B84FF;
@@ -15,7 +19,10 @@ $dark: #0a0d2c;
 $secondary-text-emphasis: darkgray;
 
 $body-bg: #faf8fa;
+// $body-bg: shade-color(white, 10%);
 $body-color: #4c4d50;
+
+
 $headings-color: #0b0a12;
 
 $primary-text-emphasis:   shade-color($primary, 60%);

@@ -21,7 +21,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "sass scss:dist --load-path=node_modules & rtlcss dist/light1/light1.css dist/light1/light1.rtl.css",
+    "build": "sass scss:dist --load-path=node_modules",
+    "rtl": "rtlcss dist/theme1/theme1.css dist/theme1/theme1.rtl.css & rtlcss dist/theme1-hc/theme1-hc.css dist/theme1-hc/theme1-hc.rtl.css",
     "publish-npm": "npm run build & npm publish --access public",
     "watch": "sass --watch scss:dist --load-path=node_modules"
   },
